@@ -1,1 +1,0 @@
-{"c++":"class Solution {\r\npublic:\r\n    void rotate(vector<int>& nums, int k) {\r\n        int n=nums.size();\r\n        vector<int> numsCopy(n);\r\n        for(int i=0;i<n;i++)\r\n        {\r\n            numsCopy[i]=nums[i];\r\n        }\r\n        for(int i=0;i<n;i++)\r\n        {\r\n            nums[(i+k)%n]=numsCopy[i];\r\n        }\r\n    }\r\n};"}

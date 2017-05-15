@@ -1,1 +1,0 @@
-{"c++":"class Solution {\r\npublic:\r\n    int getSum(int a, int b) {\r\n         int sum=a;\r\n         while(b!=0)\r\n         {\r\n             sum=a^b;\r\n             b=(a&b)<<1;\r\n             a=sum;\r\n         }\r\n         return sum;\r\n    }\r\n};"}

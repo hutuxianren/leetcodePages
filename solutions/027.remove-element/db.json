@@ -1,1 +1,0 @@
-{"c++":"class Solution {\r\npublic:\r\n    int removeElement(vector<int>& nums, int val) {\r\n        int length=nums.size();\r\n        int begin=0;\r\n        for(int i=0;i<length;i++)\r\n        {\r\n            if(nums[i]!=val) nums[begin++]=nums[i];\r\n        }\r\n        return begin;\r\n    }\r\n};"}

@@ -1,1 +1,0 @@
-{"c++":"class Solution {\r\npublic:\r\n    int majorityElement(vector<int>& nums) {\r\nint count=1;\r\nint major=nums[0];\r\nfor(int i=1;i<nums.size();i++)\r\n{\r\n    if(count==0)\r\n    {\r\n        major=nums[i];\r\n        count=1;\r\n    }\r\n    else if(major==nums[i])\r\n    {\r\n        count++;\r\n    }\r\n    else count--;\r\n}\r\nreturn major;\r\n    }\r\n};"}
