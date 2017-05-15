@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    int maxProfit(vector<int>& prices) {\r\n        int n=prices.size();\r\n        int totolProfit=0;\r\n        for(int i=0;i<n-1;i++)\r\n        {\r\n            if(prices[i+1]>prices[i]) totolProfit+=prices[i+1]-prices[i];\r\n        }\r\n        return totolProfit;\r\n    }\r\n};"}

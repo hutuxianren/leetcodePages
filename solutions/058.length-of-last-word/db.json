@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    int lengthOfLastWord(string s) {\r\n        if(s==\"\") return 0;\r\n\r\n        int i=s.length()-1;\r\n     while(i>=0&&s[i]==' ')\r\n     {\r\n         i--;\r\n     }\r\n             int count=0;\r\n     while(i>=0&&s[i]!=' ')//注意大于等于\r\n     {\r\n         i--;\r\n         count++;\r\n     }\r\n     return count;\r\n    }\r\n};"}

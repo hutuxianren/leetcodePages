@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    bool isPalindrome(int x) {\r\n        if(x<0) return false;\r\n                    int temp=x;\r\n                    int result=0;\r\n        while(x)\r\n        {\r\n         result=result*10+x%10;\r\n            x/=10;\r\n        }\r\n        return result==temp;\r\n        \r\n    }\r\n};"}

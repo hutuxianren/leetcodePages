@@ -1,0 +1,1 @@
+{"c++":"class Solution {\r\npublic:\r\n    int singleNumber(vector<int>& nums) {\r\n        int singleNum=nums[0];\r\n        for(int i=1;i<nums.size();i++)\r\n        {\r\n            singleNum^=nums[i];\r\n        }\r\n        return singleNum;\r\n    }\r\n};"}
